@@ -68,6 +68,7 @@ if (window.innerWidth > 900) {
 }
 
 const contactForm = document.getElementById("contactForm");
+const formMessage = document.getElementById("formMessage");
 
 if (contactForm) {
   contactForm.addEventListener("submit", (e) => {
@@ -81,7 +82,10 @@ if (contactForm) {
     const mensaje = document.getElementById("mensaje")?.value.trim() || "";
 
     if (!nombre || !correo || !mensaje) {
-      alert("Por favor completa nombre, correo y mensaje.");
+      if (formMessage) {
+        formMessage.textContent = "Por favor completa nombre, correo y mensaje.";
+        formMessage.className = "form-note error";
+      }
       return;
     }
 
@@ -98,8 +102,15 @@ Servicio: ${servicio}
 Necesidad: ${mensaje}
     `.trim();
 
+    if (formMessage) {
+      formMessage.textContent = "Gracias. Estamos abriendo WhatsApp con tu solicitud.";
+      formMessage.className = "form-note success";
+    }
+
     const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
 
-    window.open(url, "_blank");
+    setTimeout(() => {
+      window.open(url, "_blank");
+    }, 500);
   });
 }

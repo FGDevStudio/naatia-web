@@ -7,25 +7,32 @@
   <title>Naatia | Webs, automatización y soluciones con IA para negocios</title>
   <meta
     name="description"
-    content="Naatia ayuda a negocios a captar más clientes, responder más rápido y automatizar procesos con landing pages, WhatsApp automatizado y sistemas de seguimiento."
+    content="Naatia ayuda a negocios a captar más clientes, responder más rápido y automatizar procesos con landing pages, automatización de WhatsApp y sistemas de seguimiento."
   />
   <meta
     name="keywords"
-    content="agencia de IA, landing page para negocios, automatización de WhatsApp, chatbot para negocios, páginas web para empresas, captación de clientes"
+    content="agencia de IA, landing page para negocios, automatización de WhatsApp, chatbot para negocios, páginas web para empresas, captación de clientes, IA para negocios"
   />
   <meta name="author" content="Naatia" />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#0a0d12" />
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+
+  <!-- Open Graph -->
   <meta property="og:title" content="Naatia | Webs, automatización y soluciones con IA para negocios" />
   <meta property="og:description" content="Captamos más clientes, mejoramos la atención y automatizamos procesos para negocios modernos." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="es_MX" />
   <meta property="og:site_name" content="Naatia" />
+  <meta property="og:image" content="img/og-naatia.jpg" />
 
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Naatia | Webs, automatización y soluciones con IA para negocios" />
   <meta name="twitter:description" content="Landing pages, WhatsApp automatizado y sistemas de seguimiento para negocios que quieren vender más." />
+  <meta name="twitter:image" content="img/og-naatia.jpg" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -69,6 +76,7 @@
       <nav class="menu" id="menu">
         <a href="#servicios">Servicios</a>
         <a href="#proceso">Proceso</a>
+        <a href="#paquetes">Paquetes</a>
         <a href="#soluciones">Soluciones</a>
         <a href="#faq">FAQ</a>
         <a href="#contacto">Contacto</a>
@@ -103,7 +111,7 @@
 
           <div class="btn-row">
             <a href="#contacto" class="btn btn-primary">Solicitar propuesta</a>
-            <a href="#servicios" class="btn btn-secondary">Ver servicios</a>
+            <a href="#paquetes" class="btn btn-secondary">Ver paquetes</a>
           </div>
 
           <div class="hero-stats">
@@ -197,6 +205,68 @@
               Una presencia seria y moderna para clínicas, talleres, despachos, agencias y negocios que necesitan verse profesionales.
             </p>
             <a class="service-link" href="#contacto">Quiero una web para mi negocio →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section packages-section" id="paquetes">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Paquetes</div>
+          <h2>Paquetes claros para avanzar más rápido.</h2>
+          <p>
+            Elegimos la mejor opción según el momento de tu negocio. Puedes empezar simple y crecer después.
+          </p>
+        </div>
+
+        <div class="packages-grid">
+          <article class="package-card reveal">
+            <span class="package-badge">Inicial</span>
+            <h3>Landing Pro</h3>
+            <p class="package-text">
+              Ideal para negocios que necesitan una presencia seria y una página enfocada en captar clientes.
+            </p>
+            <ul class="package-list">
+              <li>Landing profesional</li>
+              <li>Diseño responsive</li>
+              <li>CTA y formulario</li>
+              <li>Botón de WhatsApp</li>
+              <li>SEO básico</li>
+            </ul>
+            <a href="#contacto" class="btn btn-secondary">Solicitar este paquete</a>
+          </article>
+
+          <article class="package-card featured reveal">
+            <span class="package-badge">Más vendido</span>
+            <h3>WhatsApp Pro</h3>
+            <p class="package-text">
+              Para negocios que reciben mensajes constantemente y necesitan responder mejor y más rápido.
+            </p>
+            <ul class="package-list">
+              <li>Automatización inicial</li>
+              <li>Mensajes de bienvenida</li>
+              <li>Preguntas frecuentes</li>
+              <li>Captura de datos</li>
+              <li>Mejor organización de prospectos</li>
+            </ul>
+            <a href="#contacto" class="btn btn-primary">Quiero este paquete</a>
+          </article>
+
+          <article class="package-card reveal">
+            <span class="package-badge">Escalable</span>
+            <h3>Web + Automatización</h3>
+            <p class="package-text">
+              La mejor opción si quieres captar leads y además automatizar parte de tu proceso comercial.
+            </p>
+            <ul class="package-list">
+              <li>Landing + WhatsApp</li>
+              <li>Formulario inteligente</li>
+              <li>Seguimiento básico</li>
+              <li>Flujos organizados</li>
+              <li>Base lista para crecer</li>
+            </ul>
+            <a href="#contacto" class="btn btn-secondary">Solicitar este paquete</a>
           </article>
         </div>
       </div>
@@ -428,7 +498,7 @@
             </div>
 
             <button type="submit" class="btn btn-primary">Enviar solicitud</button>
-            <div class="form-note"></div>
+            <div class="form-note" id="formMessage"></div>
           </form>
         </article>
       </div>
@@ -454,6 +524,16 @@
       </div>
     </div>
   </footer>
+
+  <a
+    href="https://wa.me/5215633383690"
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Abrir WhatsApp"
+  >
+    WA
+  </a>
 
   <script src="scripts.js"></script>
 </body>
