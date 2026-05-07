@@ -174,9 +174,9 @@ img { max-width: 100%; display: block; }
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 32px;
-  align-items: center;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 28px;
+  align-items: start;
 }
 
 .hero-left {
@@ -453,12 +453,12 @@ img { max-width: 100%; display: block; }
 
 .hero-visual {
   position: relative;
-  min-height: 390px;
+  min-height: 440px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  margin-top: 0;
-  padding-top: 10px;
+  margin-top: -65px;
+  padding-top: 0;
 }
 
 .orbital-shell {
@@ -467,7 +467,7 @@ img { max-width: 100%; display: block; }
   aspect-ratio: 1 / 1;
   display: grid;
   place-items: center;
-  transform: translateY(-85px);
+  transform: none;
 }
 
 .orbital-ring,
@@ -843,14 +843,15 @@ textarea {
   }
 
   .hero-visual {
-  min-height: 320px;
-  margin-top: 8px;
-}
+    min-height: 320px;
+    margin-top: -20px;
+    padding-top: 0;
+  }
 
-.orbital-shell {
-  width: min(100%, 340px);
-  transform: translateY(-30px);
-}
+  .orbital-shell {
+    width: min(100%, 340px);
+    transform: none;
+  }
 
   .hero-stats {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -924,14 +925,15 @@ textarea {
   }
 
   .hero-visual {
-  min-height: 280px;
-  margin-top: 6px;
-}
+    min-height: 280px;
+    margin-top: -8px;
+    padding-top: 0;
+  }
 
-.orbital-shell {
-  width: min(100%, 270px);
-  transform: translateY(-16px);
-}
+  .orbital-shell {
+    width: min(100%, 270px);
+    transform: none;
+  }
 
   .logo-core {
     width: 72%;
@@ -949,19 +951,19 @@ textarea {
   }
 
   .badge-1 {
-  top: 5%;
-  left: -2%;
-}
+    top: 5%;
+    left: -2%;
+  }
 
-.badge-2 {
-  top: 40%;
-  right: -4%;
-}
+  .badge-2 {
+    top: 40%;
+    right: -4%;
+  }
 
-.badge-3 {
-  bottom: 3%;
-  left: 2%;
-}
+  .badge-3 {
+    bottom: 3%;
+    left: 2%;
+  }
 
   .section {
     padding: 86px 0;
