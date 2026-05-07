@@ -76,6 +76,7 @@ if (contactForm) {
     const nombre = document.getElementById("nombre")?.value.trim() || "";
     const empresa = document.getElementById("empresa")?.value.trim() || "";
     const correo = document.getElementById("correo")?.value.trim() || "";
+    const celular = document.getElementById("celular")?.value.trim() || "";
     const servicio = document.getElementById("servicio")?.value || "";
     const mensaje = document.getElementById("mensaje")?.value.trim() || "";
 
@@ -92,6 +93,7 @@ Hola, me interesa una propuesta de Naatia.
 Nombre: ${nombre}
 Empresa: ${empresa}
 Correo: ${correo}
+Celular: ${celular}
 Servicio: ${servicio}
 Necesidad: ${mensaje}
     `.trim();
