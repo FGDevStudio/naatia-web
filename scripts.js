@@ -55,12 +55,14 @@ faqItems.forEach((item) => {
 
 const parallaxEls = document.querySelectorAll(".glow, .logo-core, .floating-badge");
 
-window.addEventListener("mousemove", (e) => {
-  const x = e.clientX / window.innerWidth - 0.5;
-  const y = e.clientY / window.innerHeight - 0.5;
+if (window.innerWidth > 900) {
+  window.addEventListener("mousemove", (e) => {
+    const x = e.clientX / window.innerWidth - 0.5;
+    const y = e.clientY / window.innerHeight - 0.5;
 
-  parallaxEls.forEach((el, index) => {
-    const factor = (index + 1) * 3;
-    el.style.transform = `translate(${x * factor}px, ${y * factor}px)`;
+    parallaxEls.forEach((el, index) => {
+      const factor = (index + 1) * 3;
+      el.style.transform = `translate(${x * factor}px, ${y * factor}px)`;
+    });
   });
-});
+}
