@@ -164,23 +164,24 @@ img { max-width: 100%; display: block; }
 
 .hero {
   position: relative;
-  padding: 92px 0 72px;
+  padding: 72px 0 72px;
   min-height: calc(100vh - var(--nav-h));
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .hero-grid {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 32px;
-  align-items: center;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 28px;
+  align-items: start;
 }
 
 .hero-left {
-  max-width: 700px;
+  max-width: 720px;
+  padding-top: 40px;
 }
 
 .glow {
@@ -223,11 +224,11 @@ img { max-width: 100%; display: block; }
 
 .title {
   margin: 20px 0 18px;
-  font-size: clamp(2.8rem, 5vw, 5.4rem);
+  font-size: clamp(2.9rem, 5vw, 5.2rem);
   line-height: 0.94;
   letter-spacing: -0.05em;
   font-weight: 800;
-  max-width: 10.5ch;
+  max-width: 8.8ch;
 }
 
 .title .accent {
@@ -291,7 +292,7 @@ img { max-width: 100%; display: block; }
 }
 
 .hero-stats {
-  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  grid-template-columns: repeat(3, minmax(210px, 1fr));
   margin-top: 34px;
 }
 
@@ -337,7 +338,7 @@ img { max-width: 100%; display: block; }
 }
 
 .stat-card {
-  min-height: 190px;
+  min-height: 180px;
 }
 
 .stat-card h3,
@@ -451,19 +452,21 @@ img { max-width: 100%; display: block; }
 
 .hero-visual {
   position: relative;
-  min-height: 500px;
+  min-height: 440px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  transform: translateY(10px);
+  padding-top: 0;
+  margin-top: 6px;
 }
 
 .orbital-shell {
   position: relative;
-  width: min(100%, 460px);
+  width: min(100%, 410px);
   aspect-ratio: 1 / 1;
   display: grid;
   place-items: center;
+  transform: translateY(-32px);
 }
 
 .orbital-ring,
@@ -545,9 +548,9 @@ img { max-width: 100%; display: block; }
   margin-bottom: 4px;
 }
 
-.badge-1 { top: 18%; left: 0%; }
-.badge-2 { right: 0%; top: 48%; animation-delay: 0.8s; }
-.badge-3 { bottom: 10%; left: 10%; animation-delay: 1.6s; }
+.badge-1 { top: 10%; left: -2%; }
+.badge-2 { right: -2%; top: 40%; animation-delay: 0.8s; }
+.badge-3 { bottom: 12%; left: 10%; animation-delay: 1.6s; }
 
 .faq-grid {
   display: grid;
@@ -801,13 +804,23 @@ textarea {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .hero {
+    align-items: center;
+  }
+
+  .hero-left {
+    padding-top: 0;
+  }
+
   .hero-visual {
-    min-height: 420px;
-    transform: none;
+    min-height: 360px;
+    align-items: center;
+    margin-top: 10px;
   }
 
   .orbital-shell {
-    width: min(100%, 380px);
+    width: min(100%, 360px);
+    transform: translateY(0);
   }
 }
 
@@ -844,10 +857,12 @@ textarea {
   .hero {
     padding-top: 52px;
     text-align: center;
+    align-items: center;
   }
 
   .hero-left {
     max-width: 100%;
+    padding-top: 0;
   }
 
   .hero-copy,
@@ -869,12 +884,13 @@ textarea {
   }
 
   .hero-visual {
-    min-height: 360px;
-    margin-top: 10px;
+    min-height: 340px;
+    margin-top: 6px;
   }
 
   .orbital-shell {
-    width: min(100%, 320px);
+    width: min(100%, 290px);
+    transform: translateY(0);
   }
 
   .logo-core {
@@ -895,17 +911,17 @@ textarea {
 
   .badge-1 {
     top: 8%;
-    left: -4%;
+    left: -2%;
   }
 
   .badge-2 {
-    top: 48%;
+    top: 42%;
     right: -6%;
   }
 
   .badge-3 {
-    bottom: 4%;
-    left: 2%;
+    bottom: 6%;
+    left: 6%;
   }
 
   .section {
