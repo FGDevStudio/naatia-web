@@ -174,13 +174,13 @@ img { max-width: 100%; display: block; }
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  gap: 44px;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 32px;
   align-items: center;
 }
 
 .hero-left {
-  max-width: 760px;
+  max-width: 700px;
 }
 
 .glow {
@@ -223,10 +223,11 @@ img { max-width: 100%; display: block; }
 
 .title {
   margin: 20px 0 18px;
-  font-size: clamp(2.4rem, 5vw, 5.7rem);
-  line-height: 0.95;
+  font-size: clamp(2.8rem, 5vw, 5.4rem);
+  line-height: 0.94;
   letter-spacing: -0.05em;
   font-weight: 800;
+  max-width: 10.5ch;
 }
 
 .title .accent {
@@ -290,7 +291,7 @@ img { max-width: 100%; display: block; }
 }
 
 .hero-stats {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
   margin-top: 34px;
 }
 
@@ -333,6 +334,10 @@ img { max-width: 100%; display: block; }
 .contact-card,
 .package-card {
   padding: 26px;
+}
+
+.stat-card {
+  min-height: 190px;
 }
 
 .stat-card h3,
@@ -446,15 +451,16 @@ img { max-width: 100%; display: block; }
 
 .hero-visual {
   position: relative;
-  min-height: 560px;
+  min-height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: translateY(10px);
 }
 
 .orbital-shell {
   position: relative;
-  width: min(100%, 520px);
+  width: min(100%, 460px);
   aspect-ratio: 1 / 1;
   display: grid;
   place-items: center;
@@ -539,9 +545,9 @@ img { max-width: 100%; display: block; }
   margin-bottom: 4px;
 }
 
-.badge-1 { top: 11%; left: 2%; }
-.badge-2 { right: -2%; top: 24%; animation-delay: 0.8s; }
-.badge-3 { bottom: 10%; left: 8%; animation-delay: 1.6s; }
+.badge-1 { top: 18%; left: 0%; }
+.badge-2 { right: 0%; top: 48%; animation-delay: 0.8s; }
+.badge-3 { bottom: 10%; left: 10%; animation-delay: 1.6s; }
 
 .faq-grid {
   display: grid;
@@ -714,12 +720,15 @@ textarea {
 }
 
 .social-links a {
-  padding: 10px 14px;
+  width: 46px;
+  height: 46px;
   border-radius: 999px;
+  display: grid;
+  place-items: center;
   background: rgba(255,255,255,0.04);
   border: 1px solid rgba(255,255,255,0.08);
   color: #d7dde6;
-  font-size: 0.92rem;
+  font-size: 1.1rem;
   transition: all 0.3s ease;
 }
 
@@ -741,10 +750,11 @@ textarea {
   place-items: center;
   background: linear-gradient(135deg, #25d366, #1da851);
   color: white;
-  font-weight: 800;
+  font-size: 1.6rem;
   box-shadow: 0 18px 38px rgba(0,0,0,0.28);
   z-index: 60;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 700;
 }
 
 .whatsapp-float:hover {
@@ -792,7 +802,12 @@ textarea {
   }
 
   .hero-visual {
-    min-height: 460px;
+    min-height: 420px;
+    transform: none;
+  }
+
+  .orbital-shell {
+    width: min(100%, 380px);
   }
 }
 
@@ -879,18 +894,18 @@ textarea {
   }
 
   .badge-1 {
-    top: 4%;
-    left: -6%;
+    top: 8%;
+    left: -4%;
   }
 
   .badge-2 {
-    top: 18%;
-    right: -10%;
+    top: 48%;
+    right: -6%;
   }
 
   .badge-3 {
-    bottom: 2%;
-    left: 0%;
+    bottom: 4%;
+    left: 2%;
   }
 
   .section {
@@ -899,6 +914,7 @@ textarea {
 
   .title {
     line-height: 1.02;
+    max-width: none;
   }
 
   .social-links {
