@@ -1642,3 +1642,21 @@ textarea {
     padding-top: 8px;
   }
 }
+
+.client-link-card {
+  display: block;
+  cursor: pointer;
+}
+
+.client-link-card h3,
+.client-link-card p {
+  transition: color 0.3s ease;
+}
+
+.client-link-card:hover h3 {
+  color: var(--gold-strong);
+}
+
+.client-link-card:hover p {
+  color: var(--text);
+}
