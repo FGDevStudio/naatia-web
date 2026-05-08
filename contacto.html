@@ -4,7 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contacto | Naatia</title>
-  <meta name="description" content="Solicita una propuesta para tu negocio con Naatia." />
+  <meta name="description" content="Solicita una propuesta con Naatia y cuéntanos qué necesitas resolver en tu negocio." />
+  <meta name="keywords" content="contacto naatia, propuesta, web para negocios, automatización, WhatsApp, IA" />
+  <meta name="author" content="Naatia" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0a0d12" />
+
   <link rel="icon" type="image/png" href="img/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,18 +20,23 @@
 <body>
   <header class="site-header">
     <div class="container nav">
-      <a href="index.html" class="brand">
-        <div class="brand-mark"><img src="img/logo-naatia.png" alt="Logo de Naatia" /></div>
-        <div class="brand-copy"><strong>Naatia</strong><span>IA, automatización y webs para negocios</span></div>
+      <a href="index.html" class="brand" aria-label="Ir al inicio de Naatia">
+        <div class="brand-mark">
+          <img src="img/logo-naatia.png" alt="Logo de Naatia" />
+        </div>
+        <div class="brand-copy">
+          <strong>Naatia</strong>
+          <span>IA, automatización y webs para negocios</span>
+        </div>
       </a>
+
       <nav class="menu" id="menu">
+        <a href="index.html">Inicio</a>
         <a href="servicios.html">Servicios</a>
-        <a href="proceso.html">Proceso</a>
-        <a href="paquetes.html">Paquetes</a>
-        <a href="soluciones.html">Soluciones</a>
-        <a href="faq.html">FAQ</a>
+        <a href="clientes.html">Clientes</a>
         <a href="contacto.html">Contacto</a>
       </nav>
+
       <div class="nav-actions">
         <a class="btn btn-secondary" href="contacto.html">Solicitar propuesta</a>
         <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
@@ -35,37 +45,56 @@
   </header>
 
   <main>
-    <section class="section">
+    <section class="section page-hero">
+      <div class="container">
+        <div class="section-head reveal page-hero-head">
+          <div class="eyebrow">Contacto</div>
+          <h1 class="page-title">
+            Cuéntanos qué quieres resolver y
+            <span class="accent-text">armamos la estructura correcta.</span>
+          </h1>
+          <p>
+            Podemos ayudarte a definir una web, una automatización o una solución integral según el momento
+            actual de tu negocio.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-page-section">
       <div class="container contact-wrap">
         <article class="contact-card reveal">
           <div class="eyebrow">Solución estratégica</div>
-          <h3>Diseñamos soluciones digitales que se adaptan a la esencia de tu negocio.</h3>
+          <h3>Diseñamos propuestas alineadas a la esencia de tu negocio.</h3>
           <p>
-            Cada empresa tiene una identidad, una necesidad y una forma distinta de conectar con sus clientes.
-            Por eso desarrollamos propuestas que no solo se ven bien, sino que también ayudan a comunicar mejor,
-            optimizar procesos y fortalecer la experiencia de quienes interactúan con tu marca.
+            No buscamos venderte algo innecesario. Analizamos tu necesidad y te proponemos una estructura
+            realista, escalable y bien planteada para mejorar captación, atención o seguimiento.
           </p>
 
           <div class="contact-points">
             <div class="contact-point">
-              <strong>Dominio</strong>
-              Te ayudamos a encontrar la alternativa digital más adecuada para impulsar tu negocio.
+              <strong>Qué podemos construir</strong>
+              Webs, landings, automatizaciones de WhatsApp, formularios inteligentes y estructuras escalables.
             </div>
 
             <div class="contact-point">
-              <strong>Enfoque</strong>
-              Destacamos el giro de tu empresa para construir una presencia clara, atractiva y alineada con tu mercado.
+              <strong>Para quién funciona</strong>
+              Desde negocios que van empezando hasta marcas que necesitan más orden y presencia digital.
             </div>
 
             <div class="contact-point">
-              <strong>Modelo recomendado</strong>
-              Exploramos distintas variantes para desarrollar una solución funcional que mejore tu servicio y acompañe tu crecimiento.
+              <strong>Cómo trabajamos</strong>
+              Definimos la necesidad, planteamos la solución correcta y proponemos una implementación clara.
             </div>
+          </div>
+
+          <div class="contact-extra-links">
+            <a href="https://wa.me/5215633383690" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Escribir por WhatsApp</a>
           </div>
         </article>
 
         <article class="contact-card reveal">
-          <h3>Solicita una propuesta para tu negocio</h3>
+          <h3>Solicita una propuesta</h3>
 
           <form id="contactForm">
             <div class="field-row">
@@ -97,16 +126,19 @@
                 <label for="servicio">Servicio de interés</label>
                 <select id="servicio">
                   <option>Landing para captar clientes</option>
+                  <option>Web para negocio</option>
                   <option>WhatsApp automatizado</option>
-                  <option>Formulario + seguimiento</option>
-                  <option>Web para negocio local</option>
+                  <option>Formularios y seguimiento</option>
+                  <option>Paquete Presencia</option>
+                  <option>Paquete Conversión</option>
+                  <option>Paquete Expansión</option>
                 </select>
               </div>
             </div>
 
             <div>
               <label for="mensaje">¿Qué quieres resolver?</label>
-              <textarea id="mensaje" placeholder="Cuéntame qué problema quieres resolver o qué tipo de clientes quieres atraer."></textarea>
+              <textarea id="mensaje" placeholder="Cuéntanos tu necesidad, qué quieres mejorar o qué resultado estás buscando."></textarea>
             </div>
 
             <button type="submit" class="btn btn-primary">Enviar solicitud</button>
@@ -120,11 +152,14 @@
   <footer class="footer">
     <div class="container footer-line">
       <div>© 2026 Naatia. Agencia de IA, automatización y webs para negocios.</div>
+
       <div class="footer-links">
         <a href="index.html">Inicio</a>
         <a href="servicios.html">Servicios</a>
+        <a href="clientes.html">Clientes</a>
         <a href="contacto.html">Contacto</a>
       </div>
+
       <div class="social-links">
         <a href="https://www.youtube.com/@naatiamx" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
         <a href="https://www.tiktok.com/@naatiamx" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
@@ -135,7 +170,10 @@
     </div>
   </footer>
 
-  <a href="https://wa.me/5215633383690" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp"><i class="bi bi-whatsapp"></i></a>
+  <a href="https://wa.me/5215633383690" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
   <script src="scripts.js"></script>
 </body>
 </html>

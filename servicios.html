@@ -4,7 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Servicios | Naatia</title>
-  <meta name="description" content="Servicios de Naatia: landing pages, webs para negocios, automatización de WhatsApp y seguimiento de leads." />
+  <meta name="description" content="Servicios y paquetes de Naatia para captar clientes, automatizar atención y mejorar la operación de tu negocio." />
+  <meta name="keywords" content="servicios de automatización, landing page para negocios, páginas web, WhatsApp automatizado, formularios inteligentes, agencia de IA" />
+  <meta name="author" content="Naatia" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0a0d12" />
+
   <link rel="icon" type="image/png" href="img/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,18 +20,23 @@
 <body>
   <header class="site-header">
     <div class="container nav">
-      <a href="index.html" class="brand">
-        <div class="brand-mark"><img src="img/logo-naatia.png" alt="Logo de Naatia" /></div>
-        <div class="brand-copy"><strong>Naatia</strong><span>IA, automatización y webs para negocios</span></div>
+      <a href="index.html" class="brand" aria-label="Ir al inicio de Naatia">
+        <div class="brand-mark">
+          <img src="img/logo-naatia.png" alt="Logo de Naatia" />
+        </div>
+        <div class="brand-copy">
+          <strong>Naatia</strong>
+          <span>IA, automatización y webs para negocios</span>
+        </div>
       </a>
+
       <nav class="menu" id="menu">
+        <a href="index.html">Inicio</a>
         <a href="servicios.html">Servicios</a>
-        <a href="proceso.html">Proceso</a>
-        <a href="paquetes.html">Paquetes</a>
-        <a href="soluciones.html">Soluciones</a>
-        <a href="faq.html">FAQ</a>
+        <a href="clientes.html">Clientes</a>
         <a href="contacto.html">Contacto</a>
       </nav>
+
       <div class="nav-actions">
         <a class="btn btn-secondary" href="contacto.html">Solicitar propuesta</a>
         <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
@@ -35,45 +45,276 @@
   </header>
 
   <main>
-    <section class="section">
+    <section class="section page-hero">
+      <div class="container">
+        <div class="section-head reveal page-hero-head">
+          <div class="eyebrow">Servicios y paquetes</div>
+          <h1 class="page-title">
+            Soluciones digitales para
+            <span class="accent-text">captar, responder y crecer.</span>
+          </h1>
+          <p>
+            En esta página reunimos nuestros servicios individuales, paquetes, proceso de trabajo y
+            las necesidades de negocio que podemos ayudarte a resolver con diseño, automatización e IA aplicada.
+          </p>
+
+          <div class="btn-row">
+            <a href="contacto.html" class="btn btn-primary">Quiero una propuesta</a>
+            <a href="#paquetes" class="btn btn-secondary">Ver paquetes</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services-main" id="servicios">
       <div class="container">
         <div class="section-head reveal">
-          <div class="eyebrow">Servicios</div>
-          <h2>Servicios que una empresa sí entiende y sí quiere pagar.</h2>
+          <div class="eyebrow">Servicios individuales</div>
+          <h2>Servicios pensados para resolver problemas reales.</h2>
           <p>
-            Diseñamos soluciones concretas para captar clientes, responder más rápido,
-            automatizar tareas repetitivas y mejorar la operación comercial.
+            Cada servicio responde a una necesidad concreta: atraer clientes, ordenar contactos,
+            mejorar atención o construir una presencia digital más sólida.
           </p>
         </div>
 
         <div class="services-grid">
           <article class="service-card reveal">
             <div class="service-icon">✦</div>
-            <h3>Landing para captar clientes</h3>
-            <p>Diseño profesional, copy comercial, formulario, CTA fuerte, WhatsApp y estructura enfocada en conversión.</p>
-            <a class="service-link" href="contacto.html">Quiero una landing →</a>
+            <h3>Landing page para captar clientes</h3>
+            <p>
+              Diseño orientado a conversión, estructura clara, llamada a la acción, formulario y
+              enfoque en generar contactos, cotizaciones o llamadas.
+            </p>
+            <div class="service-meta">Ideal para campañas, redes y negocios que quieren vender más.</div>
           </article>
 
           <article class="service-card reveal">
             <div class="service-icon">◎</div>
-            <h3>WhatsApp automatizado</h3>
-            <p>Mensajes de bienvenida, preguntas frecuentes, captura de datos y atención inicial para no perder prospectos.</p>
-            <a class="service-link" href="contacto.html">Quiero automatizar WhatsApp →</a>
+            <h3>Web para negocio</h3>
+            <p>
+              Sitios profesionales para negocios que necesitan credibilidad, claridad en sus servicios
+              y una presencia digital bien presentada.
+            </p>
+            <div class="service-meta">Ideal para clínicas, talleres, despachos, agencias y marcas locales.</div>
           </article>
 
           <article class="service-card reveal">
             <div class="service-icon">◈</div>
-            <h3>Formulario + seguimiento</h3>
-            <p>Recibe datos, envía leads a Sheets o correo, y activa avisos o seguimientos automáticos.</p>
-            <a class="service-link" href="contacto.html">Quiero seguimiento automático →</a>
+            <h3>WhatsApp automatizado</h3>
+            <p>
+              Flujos iniciales de atención, respuestas frecuentes, captura de datos y organización de
+              mensajes para responder más rápido.
+            </p>
+            <div class="service-meta">Ideal para negocios que reciben muchos mensajes repetidos.</div>
           </article>
 
           <article class="service-card reveal">
             <div class="service-icon">⌁</div>
-            <h3>Web para negocio local</h3>
-            <p>Una presencia seria y moderna para clínicas, talleres, despachos, agencias y negocios que necesitan verse profesionales.</p>
-            <a class="service-link" href="contacto.html">Quiero una web para mi negocio →</a>
+            <h3>Formularios y seguimiento</h3>
+            <p>
+              Formularios inteligentes conectados a correo o seguimiento comercial básico para no perder
+              prospectos por desorden.
+            </p>
+            <div class="service-meta">Ideal para negocios que ya generan interés pero no lo aprovechan bien.</div>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section packages-section" id="paquetes">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Paquetes</div>
+          <h2>Paquetes construidos para cada etapa de crecimiento.</h2>
+          <p>
+            Puedes iniciar con una base sencilla y escalar después. Nuestros paquetes integran servicios
+            que sí se complementan entre sí.
+          </p>
+        </div>
+
+        <div class="packages-grid">
+          <article class="package-card reveal">
+            <span class="package-badge">Base</span>
+            <h3>Presencia</h3>
+            <p class="package-text">
+              Para negocios que necesitan verse profesionales y empezar a captar clientes de forma clara.
+            </p>
+            <ul class="package-list">
+              <li>Landing page profesional</li>
+              <li>CTA y formulario</li>
+              <li>Botón de WhatsApp</li>
+              <li>Diseño responsive</li>
+              <li>Publicación base</li>
+            </ul>
+            <a href="contacto.html" class="btn btn-secondary">Solicitar este paquete</a>
+          </article>
+
+          <article class="package-card featured reveal">
+            <span class="package-badge">Más recomendado</span>
+            <h3>Conversión</h3>
+            <p class="package-text">
+              Para negocios que además de presencia necesitan responder mejor y ordenar prospectos.
+            </p>
+            <ul class="package-list">
+              <li>Landing + estructura comercial</li>
+              <li>WhatsApp automatizado inicial</li>
+              <li>Formulario inteligente</li>
+              <li>Captura de datos</li>
+              <li>Seguimiento básico</li>
+            </ul>
+            <a href="contacto.html" class="btn btn-primary">Quiero este paquete</a>
+          </article>
+
+          <article class="package-card reveal">
+            <span class="package-badge">Escalable</span>
+            <h3>Expansión</h3>
+            <p class="package-text">
+              Para negocios que quieren una base más sólida para crecer, automatizar y operar con más claridad.
+            </p>
+            <ul class="package-list">
+              <li>Web o landing avanzada</li>
+              <li>Automatización de WhatsApp</li>
+              <li>Formularios y seguimiento</li>
+              <li>Estructura lista para escalar</li>
+              <li>Soporte inicial</li>
+            </ul>
+            <a href="contacto.html" class="btn btn-secondary">Solicitar este paquete</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process-section" id="proceso">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Proceso</div>
+          <h2>Trabajamos con un proceso claro y aterrizado.</h2>
+          <p>
+            No improvisamos. Cada proyecto sigue una ruta simple para entender el problema,
+            plantear una solución y entregarla de forma funcional.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-card reveal">
+            <span class="process-number">01 / ANÁLISIS</span>
+            <h3>Entendemos el negocio</h3>
+            <p>Revisamos qué necesitas resolver: captar, responder, ordenar o automatizar.</p>
+          </article>
+
+          <article class="process-card reveal">
+            <span class="process-number">02 / ESTRUCTURA</span>
+            <h3>Definimos la solución</h3>
+            <p>Planteamos la combinación correcta entre web, WhatsApp, formularios y automatización.</p>
+          </article>
+
+          <article class="process-card reveal">
+            <span class="process-number">03 / IMPLEMENTACIÓN</span>
+            <h3>Construimos y ajustamos</h3>
+            <p>Diseñamos, configuramos y dejamos la solución lista para operar en tu negocio.</p>
+          </article>
+
+          <article class="process-card reveal">
+            <span class="process-number">04 / ESCALA</span>
+            <h3>Crecemos contigo</h3>
+            <p>Si tu negocio avanza, la base que construimos también puede seguir evolucionando.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section solutions-section" id="soluciones">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Problemas que resolvemos</div>
+          <h2>Convertimos problemas comunes en sistemas más claros.</h2>
+          <p>
+            Muchas empresas no necesitan “más tecnología”; necesitan una solución concreta que sí funcione.
+          </p>
+        </div>
+
+        <div class="case-grid">
+          <article class="case-card reveal">
+            <div class="case-tag">Captación</div>
+            <h3>No llegan suficientes clientes</h3>
+            <p>Diseñamos páginas y estructuras de contacto orientadas a generar más oportunidades reales.</p>
+          </article>
+
+          <article class="case-card reveal">
+            <div class="case-tag">Atención</div>
+            <h3>Se responde tarde o mal</h3>
+            <p>Automatizamos la entrada de mensajes para mejorar la atención inicial sin saturar al negocio.</p>
+          </article>
+
+          <article class="case-card reveal">
+            <div class="case-tag">Orden</div>
+            <h3>Los prospectos se pierden</h3>
+            <p>Conectamos formularios y seguimiento para que el interés no se quede en mensajes sueltos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-short-section" id="faq">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">FAQ</div>
+          <h2>Dudas frecuentes</h2>
+          <p>
+            Respuestas rápidas para que entiendas cómo trabajamos y qué sí puedes esperar de Naatia.
+          </p>
+        </div>
+
+        <div class="faq-grid">
+          <article class="faq-item reveal active">
+            <button class="faq-question" type="button">
+              <span>¿Puedo empezar con algo pequeño y después crecer?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer" style="max-height: 200px;">
+              <p>Sí. Diseñamos soluciones escalables para que puedas empezar con una base sencilla y fortalecerla con el tiempo.</p>
+            </div>
+          </article>
+
+          <article class="faq-item reveal">
+            <button class="faq-question" type="button">
+              <span>¿Naatia solo trabaja con IA?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>No. Usamos IA cuando aporta valor, pero también desarrollamos webs, automatizaciones y estructuras digitales funcionales.</p>
+            </div>
+          </article>
+
+          <article class="faq-item reveal">
+            <button class="faq-question" type="button">
+              <span>¿Pueden ayudarme aunque mi negocio apenas va empezando?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Sí. Podemos trabajar desde negocios pequeños que están arrancando hasta marcas que buscan crecer con una base más fuerte.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services-cta">
+      <div class="container">
+        <div class="contact-card reveal services-cta-card">
+          <div>
+            <div class="eyebrow">Hablemos</div>
+            <h3>Te ayudamos a elegir la estructura correcta para tu negocio.</h3>
+            <p>
+              Si no sabes si necesitas una web, automatización, un paquete o una combinación,
+              te ayudamos a definir la mejor alternativa según tu momento actual.
+            </p>
+          </div>
+
+          <div class="btn-row">
+            <a href="contacto.html" class="btn btn-primary">Solicitar propuesta</a>
+            <a href="clientes.html" class="btn btn-secondary">Ver clientes</a>
+          </div>
         </div>
       </div>
     </section>
@@ -82,11 +323,14 @@
   <footer class="footer">
     <div class="container footer-line">
       <div>© 2026 Naatia. Agencia de IA, automatización y webs para negocios.</div>
+
       <div class="footer-links">
         <a href="index.html">Inicio</a>
         <a href="servicios.html">Servicios</a>
+        <a href="clientes.html">Clientes</a>
         <a href="contacto.html">Contacto</a>
       </div>
+
       <div class="social-links">
         <a href="https://www.youtube.com/@naatiamx" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
         <a href="https://www.tiktok.com/@naatiamx" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
@@ -97,7 +341,10 @@
     </div>
   </footer>
 
-  <a href="https://wa.me/5215633383690" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp"><i class="bi bi-whatsapp"></i></a>
+  <a href="https://wa.me/5215633383690" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
   <script src="scripts.js"></script>
 </body>
 </html>
