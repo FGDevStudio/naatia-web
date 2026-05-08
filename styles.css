@@ -297,41 +297,41 @@ img { max-width: 100%; display: block; }
   gap: 16px;
 }
 
-/* CLIENTES - CODICE DIGITAL */
-.hero-clients-codex {
+/* ALIANZAS */
+.hero-alliances {
   margin-top: 34px;
   display: grid;
   gap: 18px;
 }
 
-.clients-codex-head {
+.alliances-head {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
-.clients-codex-head span {
+.alliances-head span {
   font-size: 0.95rem;
   font-weight: 700;
   color: var(--gold-strong);
   letter-spacing: 0.04em;
 }
 
-.clients-codex-head p {
+.alliances-head p {
   margin: 0;
   color: var(--muted);
   font-size: 0.98rem;
   line-height: 1.6;
 }
 
-.clients-codex-map {
+.alliances-panel {
   position: relative;
   width: min(100%, 560px);
-  height: 340px;
+  padding: 28px 24px;
   border-radius: 28px;
   overflow: hidden;
   background:
-    radial-gradient(circle at 50% 50%, rgba(97,200,199,0.06), transparent 38%),
+    radial-gradient(circle at 50% 20%, rgba(199,176,138,0.08), transparent 30%),
     linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
   border: 1px solid rgba(255,255,255,0.07);
   backdrop-filter: blur(16px);
@@ -340,148 +340,86 @@ img { max-width: 100%; display: block; }
     0 18px 40px rgba(0,0,0,0.18);
 }
 
-.codex-grid {
+.alliances-pattern {
   position: absolute;
   inset: 0;
-  background-image:
-    linear-gradient(rgba(97,200,199,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(97,200,199,0.04) 1px, transparent 1px);
-  background-size: 42px 42px;
-  opacity: 0.22;
+  opacity: 0.18;
   pointer-events: none;
+  background:
+    linear-gradient(45deg, transparent 46%, rgba(97,200,199,0.08) 47%, rgba(97,200,199,0.08) 53%, transparent 54%),
+    linear-gradient(-45deg, transparent 46%, rgba(199,176,138,0.08) 47%, rgba(199,176,138,0.08) 53%, transparent 54%);
+  background-size: 70px 70px;
 }
 
-.codex-lines {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
+.alliances-grid {
+  position: relative;
   z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
 }
 
-.codex-lines path {
-  fill: none;
-  stroke: rgba(97,200,199,0.18);
-  stroke-width: 1.6;
-  stroke-linecap: round;
-  stroke-dasharray: 6 8;
+.alliance-seal {
+  aspect-ratio: 1 / 1;
+  display: grid;
+  place-items: center;
 }
 
-.codex-center-glow {
-  position: absolute;
-  width: 220px;
-  height: 220px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+.seal-inner {
+  width: 116px;
+  height: 116px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(199,176,138,0.12), transparent 70%);
-  filter: blur(22px);
-  z-index: 0;
-}
-
-.client-glyph {
-  position: absolute;
-  z-index: 2;
-}
-
-.glyph-shell,
-.glyph-core {
-  width: 84px;
-  height: 84px;
-  border-radius: 50%;
+  position: relative;
   display: grid;
   place-items: center;
   overflow: hidden;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(255,255,255,0.04), rgba(0,0,0,0.94)),
+    linear-gradient(145deg, rgba(199,176,138,0.05), rgba(97,200,199,0.04));
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.22);
   transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.glyph-shell {
-  background:
-    radial-gradient(circle at 30% 30%, rgba(255,255,255,0.04), rgba(0,0,0,0.94)),
-    linear-gradient(145deg, rgba(199,176,138,0.06), rgba(97,200,199,0.04));
-  border: 1px solid rgba(255,255,255,0.08);
-  box-shadow: 0 12px 26px rgba(0,0,0,0.24);
-  position: relative;
-}
-
-.glyph-shell::before {
+.seal-inner::before {
   content: "";
   position: absolute;
-  inset: 8px;
+  inset: 10px;
   border-radius: 50%;
   border: 1px solid rgba(199,176,138,0.12);
-  pointer-events: none;
 }
 
-.glyph-shell::after {
+.seal-inner::after {
   content: "";
   position: absolute;
-  width: 32px;
-  height: 32px;
+  width: 42px;
+  height: 42px;
   border: 1px solid rgba(97,200,199,0.10);
-  border-radius: 8px;
+  border-radius: 10px;
   transform: rotate(45deg);
-  pointer-events: none;
 }
 
-.glyph-core {
-  width: 132px;
-  height: 132px;
-  background:
-    radial-gradient(circle at 35% 30%, rgba(199,176,138,0.14), rgba(7,9,13,0.95) 60%);
-  border: 1px solid rgba(199,176,138,0.18);
-  box-shadow:
-    0 0 36px rgba(97,200,199,0.08),
-    inset 0 0 28px rgba(199,176,138,0.08);
-  position: relative;
-}
-
-.glyph-core::before {
-  content: "";
-  position: absolute;
-  inset: 14px;
-  border: 1px dashed rgba(97,200,199,0.12);
-  border-radius: 50%;
-}
-
-.glyph-core span {
-  position: relative;
-  z-index: 1;
-  color: var(--gold-strong);
-  font-weight: 700;
-  letter-spacing: 0.04em;
-}
-
-.client-glyph:hover .glyph-shell {
-  transform: scale(1.05);
+.alliance-seal:hover .seal-inner {
+  transform: translateY(-4px) scale(1.03);
   border-color: rgba(199,176,138,0.24);
-  box-shadow: 0 0 24px rgba(97,200,199,0.10), 0 14px 28px rgba(0,0,0,0.26);
+  box-shadow: 0 0 24px rgba(97,200,199,0.08), 0 16px 34px rgba(0,0,0,0.24);
 }
 
-.glyph-shell img {
+.seal-featured .seal-inner {
+  background:
+    radial-gradient(circle at 30% 30%, rgba(199,176,138,0.12), rgba(0,0,0,0.94)),
+    linear-gradient(145deg, rgba(199,176,138,0.08), rgba(97,200,199,0.05));
+  border-color: rgba(199,176,138,0.18);
+}
+
+.seal-inner img {
   width: 62%;
   height: 62%;
   object-fit: contain;
-  filter: drop-shadow(0 8px 18px rgba(0,0,0,0.18));
   position: relative;
   z-index: 1;
+  filter: drop-shadow(0 8px 18px rgba(0,0,0,0.18));
 }
-
-.glyph-center {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.glyph-1 { top: 44px; left: 46%; }
-.glyph-2 { top: 70px; right: 70px; }
-.glyph-3 { top: 188px; right: 84px; }
-.glyph-4 { bottom: 24px; left: 47%; }
-.glyph-5 { bottom: 54px; left: 92px; }
-.glyph-6 { top: 92px; left: 68px; }
-.glyph-7 { top: 50%; left: 132px; transform: translateY(-50%); }
-.glyph-8 { top: 50%; right: 132px; transform: translateY(-50%); }
 
 .services-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .process-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
@@ -1039,12 +977,12 @@ textarea {
     transform: none;
   }
 
-  .hero-clients-codex {
+  .hero-alliances {
     margin-top: 28px;
     justify-items: center;
   }
 
-  .clients-codex-head {
+  .alliances-head {
     text-align: center;
   }
 }
@@ -1156,38 +1094,29 @@ textarea {
     left: 2%;
   }
 
-  .hero-clients-codex {
+  .hero-alliances {
     margin-top: 26px;
     justify-items: center;
   }
 
-  .clients-codex-head {
+  .alliances-head {
     text-align: center;
   }
 
-  .clients-codex-map {
+  .alliances-panel {
     width: min(100%, 320px);
-    height: 300px;
+    padding: 22px 16px;
   }
 
-  .glyph-core {
-    width: 108px;
-    height: 108px;
+  .alliances-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
   }
 
-  .glyph-shell {
-    width: 62px;
-    height: 62px;
+  .seal-inner {
+    width: 96px;
+    height: 96px;
   }
-
-  .glyph-1 { top: 34px; left: 44%; }
-  .glyph-2 { top: 62px; right: 34px; }
-  .glyph-3 { top: 176px; right: 40px; }
-  .glyph-4 { bottom: 14px; left: 46%; }
-  .glyph-5 { bottom: 46px; left: 42px; }
-  .glyph-6 { top: 82px; left: 34px; }
-  .glyph-7 { top: 50%; left: 72px; transform: translateY(-50%); }
-  .glyph-8 { top: 50%; right: 72px; transform: translateY(-50%); }
 
   .section {
     padding: 86px 0;
