@@ -215,3 +215,13 @@ input::placeholder,textarea::placeholder{color:#697c7b}
  .page-title{font-size:34px}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}html{scroll-behavior:auto}}
+
+/* Estados de formulario legibles y navegación coherente en todas las páginas */
+.form-note.error{color:#a72626;font-weight:650}
+.form-note.success{color:#0e6c55;font-weight:650}
+.contact-point{background:#f4f8f5;border:1px solid #e1ece5;color:#435b5e}
+.pricing-note{color:#485e62}
+.contact-page-section .contact-card{min-width:0}
+.contact-wrap input,.contact-wrap textarea,.contact-wrap select{color:#173138;background:#fff;border:1px solid #becec6}
+.contact-wrap input::placeholder,.contact-wrap textarea::placeholder{color:#667b79}
+@media(max-width:820px){.contact-wrap{grid-template-columns:1fr}.contact-page-section .contact-card{padding:25px}}
