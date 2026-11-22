@@ -16,6 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="legible.css?v=20261122-1" />
 </head>
 <body>
   <header class="site-header">
@@ -50,12 +51,11 @@
         <div class="section-head reveal page-hero-head">
           <div class="eyebrow">Contacto</div>
           <h1 class="page-title">
-            Cuéntanos qué quieres resolver y
-            <span class="accent-text">armamos la estructura correcta.</span>
+            Cuéntanos qué necesita tu negocio y
+            <span class="accent-text">te damos una propuesta clara.</span>
           </h1>
           <p>
-            Podemos ayudarte a definir una web, una automatización o una solución integral según el momento
-            actual de tu negocio.
+            Puedes pedir una página web, un menú QR, la configuración de WhatsApp o una tienda online. Te explicamos las opciones sin compromiso.
           </p>
         </div>
       </div>
@@ -64,27 +64,26 @@
     <section class="section contact-page-section">
       <div class="container contact-wrap">
         <article class="contact-card reveal">
-          <div class="eyebrow">Solución estratégica</div>
-          <h3>Diseñamos propuestas alineadas a la esencia de tu negocio.</h3>
+          <div class="eyebrow">Atención personalizada</div>
+          <h3>Cuéntanos qué te gustaría mejorar.</h3>
           <p>
-            No buscamos venderte algo innecesario. Analizamos tu necesidad y te proponemos una estructura
-            realista, escalable y bien planteada para mejorar captación, atención o seguimiento.
+            Nos dices qué negocio tienes y qué necesitas. Te ayudamos a elegir un servicio y te damos un precio con alcance claro.
           </p>
 
           <div class="contact-points">
             <div class="contact-point">
               <strong>Qué podemos construir</strong>
-              Webs, landings, automatizaciones de WhatsApp, formularios inteligentes y estructuras escalables.
+              Páginas web, menús QR, tiendas online y configuración de WhatsApp Business.
             </div>
 
             <div class="contact-point">
               <strong>Para quién funciona</strong>
-              Desde negocios que van empezando hasta marcas que necesitan más orden y presencia digital.
+              Restaurantes, comercios, servicios profesionales y negocios locales.
             </div>
 
             <div class="contact-point">
               <strong>Cómo trabajamos</strong>
-              Definimos la necesidad, planteamos la solución correcta y proponemos una implementación clara.
+              Acordamos el trabajo, precio y entregables antes de comenzar.
             </div>
           </div>
 
@@ -100,7 +99,7 @@
             <div class="field-row">
               <div>
                 <label for="nombre">Nombre</label>
-                <input id="nombre" type="text" placeholder="Tu nombre" />
+                <input id="nombre" type="text" required placeholder="Tu nombre" />
               </div>
 
               <div>
@@ -112,7 +111,7 @@
             <div class="field-row">
               <div>
                 <label for="correo">Correo</label>
-                <input id="correo" type="email" placeholder="tu@empresa.com" />
+                <input id="correo" type="email" required placeholder="tu@empresa.com" />
               </div>
 
               <div>
@@ -124,26 +123,26 @@
             <div class="field-row">
               <div>
                 <label for="servicio">Servicio de interés</label>
-                <select id="servicio">
-                  <option>Landing para captar clientes</option>
-                  <option>Web para negocio</option>
-                  <option>Menú digital QR</option>
-                  <option>Tienda en línea</option>
-                  <option>WhatsApp automatizado</option>
-                  <option>Formularios y seguimiento</option>
-                  <option>Paquete Presencia</option>
-                  <option>Paquete Conversión</option>
-                  <option>Paquete Expansión</option>
+                <select id="servicio" required>
+                  <option value="">Selecciona un servicio</option>
+                  <option>Menú digital QR — desde $1,290</option>
+                  <option>Landing page — desde $2,490</option>
+                  <option>Web para negocio — desde $4,490</option>
+                  <option>Configuración WhatsApp Business — desde $1,490</option>
+                  <option>Tienda en línea — cotización</option>
+                  <option>Automatización avanzada — cotización</option>
+                  <option>No sé qué necesito, quiero orientación</option>
                 </select>
               </div>
             </div>
 
             <div>
               <label for="mensaje">¿Qué quieres resolver?</label>
-              <textarea id="mensaje" placeholder="Cuéntanos tu necesidad, qué quieres mejorar o qué resultado estás buscando."></textarea>
+              <textarea id="mensaje" required placeholder="Cuéntanos tu necesidad, qué quieres mejorar o qué resultado estás buscando."></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary">Enviar solicitud</button>
+            <button type="submit" class="btn btn-primary">Continuar en WhatsApp</button>
+            <p class="clear-fineprint">Al continuar se abre WhatsApp con tu mensaje preparado. Tendrás que enviarlo para completar la solicitud.</p>
             <div class="form-note" id="formMessage"></div>
           </form>
         </article>
