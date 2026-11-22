@@ -1,176 +1,107 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Naatia | Páginas web, menús QR y automatización para negocios</title>
-  <meta name="description" content="Naatia crea páginas web, menús digitales QR y soluciones con automatización e IA para negocios. Cotiza desde nuestro sitio oficial." />
-  <meta name="keywords" content="agencia de IA, landing page para negocios, automatización de WhatsApp, chatbot para negocios, páginas web para empresas, captación de clientes, IA para negocios" />
-  <meta name="author" content="Naatia" />
-  <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#0a0d12" />
-
-  <link rel="icon" type="image/png" href="img/favicon.png" />
-  <meta property="og:title" content="Naatia | Sitios web, menús QR y soluciones digitales" />
-  <meta property="og:description" content="Páginas web, menús digitales QR y automatización para negocios. Conoce los servicios de Naatia." />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="es_MX" />
-  <meta property="og:site_name" content="Naatia" />
-  <meta property="og:image" content="img/og-naatia.jpg" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Naatia | Webs, automatización y soluciones con IA para negocios" />
-  <meta name="twitter:description" content="Landing pages, WhatsApp automatizado y sistemas de seguimiento para negocios que quieren vender más." />
-  <meta name="twitter:image" content="img/og-naatia.jpg" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-  <link rel="stylesheet" href="styles.css?v=naatia-home-20261122b" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Creamos páginas web, menús digitales QR y herramientas para WhatsApp. Precios claros, diseño profesional y atención directa en Ciudad de México.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Naatia | Páginas web y menús digitales para tu negocio">
+  <meta property="og:description" content="Creamos páginas web, menús digitales QR y herramientas para WhatsApp. Precios claros, diseño profesional y atención directa en Ciudad de México.">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="Naatia">
+  <link rel="canonical" href="https://www.naatia.com.mx/">
+  <link rel="icon" type="image/png" href="img/logo-naatia.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="legible.css?v=20261122-1">
+  <title>Naatia | Páginas web y menús digitales para tu negocio</title>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav">
-      <a href="index.html" class="brand" aria-label="Ir al inicio de Naatia">
-        <div class="brand-mark">
-          <img src="img/logo-naatia.png" alt="Logo de Naatia" />
-        </div>
-        <div class="brand-copy">
-          <strong>Naatia</strong>
-          <span>IA, automatización y webs para negocios</span>
-        </div>
-      </a>
-
-      <nav class="menu" id="menu">
-        <a href="index.html">Inicio</a>
-        <a href="servicios.html">Servicios</a>
-        <a href="clientes.html">Clientes</a>
-        <a href="contacto.html">Contacto</a>
-      </nav>
-
-      <div class="nav-actions">
-        <a class="btn btn-secondary" href="#soluciones">Ver servicios</a>
-        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
-      </div>
+<a class="skip-link" href="#contenido">Ir al contenido</a>
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand" aria-label="Naatia, ir al inicio"><span class="brand-mark"><img src="img/logo-naatia.png" alt="Logo original de Naatia" width="51" height="51"></span><span class="brand-copy"><strong>Naatia</strong><span>Soluciones digitales para negocios</span></span></a>
+    <nav class="menu" id="menu" aria-label="Navegación principal">
+      <a href="index.html" aria-current="page">Inicio</a>
+      <a href="servicios.html">Servicios y precios</a>
+      <a href="clientes.html">Proyectos</a>
+      <a href="faq.html">Preguntas</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-primary" href="https://wa.me/5215633383690?text=Hola%2C%20quiero%20una%20cotizaci%C3%B3n%20de%20Naatia%20para%20mi%20negocio." target="_blank" rel="noopener noreferrer">Cotizar por WhatsApp</a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><i class="bi bi-list" aria-hidden="true"></i></button>
     </div>
-  </header>
-
-  <main>
-    <section class="sales-hero" id="inicio" aria-labelledby="sales-title">
-      <div class="container sales-hero-grid">
-        <div class="sales-content reveal">
-          <div class="sales-kicker"><span class="sales-kicker-dot"></span> DISEÑO WEB · AUTOMATIZACIÓN · SOLUCIONES DIGITALES</div>
-          <h1 id="sales-title">Tu negocio merece <span>destacar en digital.</span></h1>
-          <p class="sales-description">
-            Creamos páginas web profesionales, menús digitales QR y herramientas inteligentes
-            para que tus clientes te encuentren, conozcan lo que ofreces y puedan contactarte fácilmente.
-          </p>
-          <div class="sales-actions">
-            <a class="btn btn-primary sales-main-btn" href="https://wa.me/5215633383690?text=Hola%2C%20visit%C3%A9%20Naatia%20y%20quiero%20cotizar%20una%20soluci%C3%B3n%20digital%20para%20mi%20negocio." target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp" aria-hidden="true"></i> Cotiza tu proyecto <span aria-hidden="true">↗</span></a>
-            <a class="btn btn-secondary sales-second-btn" href="#soluciones">Explorar servicios <span aria-hidden="true">↓</span></a>
-          </div>
-          <div class="sales-trust"><span><i class="bi bi-check-circle" aria-hidden="true"></i> Diseño para celular</span><span><i class="bi bi-check-circle" aria-hidden="true"></i> Atención personalizada</span><span><i class="bi bi-check-circle" aria-hidden="true"></i> Precios claros</span></div>
-        </div>
-        <div class="sales-display reveal" aria-label="Soluciones digitales Naatia">
-          <div class="sales-display-top"><div class="sales-window-dots"><i></i><i></i><i></i></div><span>NAATIA / DIGITAL STUDIO</span><span class="sales-live-dot"></span></div>
-          <div class="sales-display-body">
-            <div class="sales-display-brand"><div class="sales-display-logo"><img src="img/logo-naatia.png" alt="Logo original de Naatia" width="62" height="62"></div><div><small>Una presencia digital que conecta</small><strong>Más que una página web.</strong></div></div>
-            <div class="sales-display-stats"><div><span class="sales-stat-icon"><i class="bi bi-window-stack"></i></span><div><strong>Tu página web</strong><small>Diseño profesional</small></div><span class="sales-stat-arrow">↗</span></div>
-            <div><span class="sales-stat-icon"><i class="bi bi-qr-code"></i></span><div><strong>Tu menú digital</strong><small>Disponible con QR</small></div><span class="sales-stat-arrow">↗</span></div>
-            <div><span class="sales-stat-icon"><i class="bi bi-chat-dots"></i></span><div><strong>Tus contactos</strong><small>Directo a WhatsApp</small></div><span class="sales-stat-arrow">↗</span></div></div>
-            <div class="sales-display-bottom"><span><i class="bi bi-stars" aria-hidden="true"></i> Soluciones hechas para negocios reales</span><span class="sales-dot-line"><i></i><i></i><i></i></span></div>
-          </div>
-          <div class="sales-floating sales-floating-one"><i class="bi bi-lightning-charge" aria-hidden="true"></i> Desarrollo a medida</div>
-          <div class="sales-floating sales-floating-two"><i class="bi bi-patch-check" aria-hidden="true"></i> Identidad profesional</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="sales-solutions" id="soluciones" aria-labelledby="sales-solutions-title">
-      <div class="container">
-        <div class="sales-section-heading reveal"><div><p class="sales-overline">SERVICIOS PARA TU NEGOCIO</p><h2 id="sales-solutions-title">Soluciones que puedes <span>poner en marcha hoy.</span></h2><p>Elige lo que necesitas. Te ayudamos a definir el alcance antes de comenzar.</p></div><a href="servicios.html" class="sales-see-all">Todos los servicios <span aria-hidden="true">↗</span></a></div>
-        <div class="sales-cards">
-          <article class="sales-card reveal">
-            <div class="sales-card-header"><div class="sales-card-icon"><i class="bi bi-window-stack" aria-hidden="true"></i></div><span>01 / PRESENCIA</span></div>
-            <h3>Páginas web</h3><p>Tu negocio, servicios y contacto en un sitio rápido y profesional.</p>
-            <ul><li>Diseño responsive</li><li>Botón de WhatsApp</li><li>SEO básico</li></ul>
-            <div class="sales-card-foot"><div><small>Landings desde</small><strong>$2,999 <em>MXN</em></strong></div><a href="https://wa.me/5215633383690?text=Hola%20Naatia%2C%20quiero%20cotizar%20una%20landing%20page%20o%20p%C3%A1gina%20web%20para%20mi%20negocio." target="_blank" rel="noopener noreferrer" aria-label="Cotizar página web">↗</a></div>
-          </article>
-          <article class="sales-card sales-card-highlight reveal">
-            <div class="sales-best">IDEAL PARA RESTAURANTES</div>
-            <div class="sales-card-header"><div class="sales-card-icon"><i class="bi bi-qr-code-scan" aria-hidden="true"></i></div><span>02 / COMIDA</span></div>
-            <h3>Menús digitales QR</h3><p>Muestra platillos, precios y categorías sin complicaciones.</p>
-            <ul><li>Menú desde el celular</li><li>QR para tus mesas</li><li>Pedidos por WhatsApp</li></ul>
-            <div class="sales-card-foot"><div><small>Desde</small><strong>$1,790 <em>MXN</em></strong></div><a href="https://wa.me/5215633383690?text=Hola%20Naatia%2C%20quiero%20cotizar%20un%20men%C3%BA%20digital%20QR%20desde%20%241%2C790%20MXN." target="_blank" rel="noopener noreferrer" aria-label="Cotizar menú digital QR">↗</a></div>
-          </article>
-          <article class="sales-card reveal">
-            <div class="sales-card-header"><div class="sales-card-icon"><i class="bi bi-chat-square-dots" aria-hidden="true"></i></div><span>03 / ATENCIÓN</span></div>
-            <h3>Automatización</h3><p>Organiza mensajes y captura prospectos con flujos de atención.</p>
-            <ul><li>Respuestas frecuentes</li><li>Formularios</li><li>Seguimiento básico</li></ul>
-            <div class="sales-card-foot"><div><small>WhatsApp desde</small><strong>$3,999 <em>MXN</em></strong></div><a href="https://wa.me/5215633383690?text=Hola%20Naatia%2C%20necesito%20automatizar%20la%20atenci%C3%B3n%20de%20WhatsApp%20de%20mi%20negocio." target="_blank" rel="noopener noreferrer" aria-label="Cotizar automatización">↗</a></div>
-          </article>
-          <article class="sales-card reveal">
-            <div class="sales-card-header"><div class="sales-card-icon"><i class="bi bi-bag-check" aria-hidden="true"></i></div><span>04 / E-COMMERCE</span></div>
-            <h3>Tiendas online</h3><p>Vende productos con catálogo, carrito y cobros integrados.</p>
-            <ul><li>Catálogo de productos</li><li>Carrito de compras</li><li>Integración de pagos</li></ul>
-            <div class="sales-card-foot"><div><small>Proyecto</small><strong>Personalizado</strong></div><a href="https://wa.me/5215633383690?text=Hola%20Naatia%2C%20quiero%20cotizar%20una%20tienda%20online%20para%20mis%20productos." target="_blank" rel="noopener noreferrer" aria-label="Cotizar tienda online">↗</a></div>
-          </article>
-        </div>
-        <p class="sales-pricing-disclaimer">Precios iniciales orientativos; el costo final depende del alcance. Dominio, hosting, integraciones, mantenimiento e impuestos aplicables se cotizan por separado.</p>
-      </div>
-    </section>
-    <section class="sales-process-strip" aria-label="Nuestro proceso">
-      <div class="container sales-process-content"><p>ASÍ COMENZAMOS</p><span><strong>01.</strong> Nos cuentas tu idea</span><i class="bi bi-arrow-right" aria-hidden="true"></i><span><strong>02.</strong> Definimos la propuesta</span><i class="bi bi-arrow-right" aria-hidden="true"></i><span><strong>03.</strong> Creamos y publicamos</span></div>
-    </section>
-
-    <section class="section home-cta">
-      <div class="container">
-        <div class="contact-card reveal home-cta-card">
-          <div>
-            <div class="eyebrow">Cuéntanos qué quieres resolver</div>
-            <h3>Te ayudamos a encontrar la estructura correcta para tu negocio.</h3>
-            <p>
-              Podemos ayudarte a definir una web, automatización o solución digital alineada al momento
-              actual de tu proyecto y a la forma en que quieres crecer.
-            </p>
-          </div>
-
-          <div class="btn-row">
-            <a href="contacto.html" class="btn btn-primary">Hablar con Naatia</a>
-            <a href="servicios.html" class="btn btn-secondary">Ver servicios</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-line">
-      <div>© 2026 Naatia. Agencia de IA, automatización y webs para negocios.</div>
-
-      <div class="footer-links">
-  <a href="index.html">Inicio</a>
-  <a href="servicios.html">Servicios</a>
-  <a href="clientes.html">Clientes</a>
-  <a href="faq.html">FAQ</a>
-  <a href="contacto.html">Contacto</a>
-</div>
-
-      <div class="social-links">
-        <a href="https://www.youtube.com/@naatiamx" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
-        <a href="https://www.tiktok.com/@naatiamx" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
-        <a href="https://www.instagram.com/naatiamx?igsh=MWIwdHk3Y2xqeWN1dA%3D%3D" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.facebook.com/naatiamx?rdid=ohpvLah0sSlHlEV2&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18eUJA3DKV%2F#" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-        <a href="https://wa.me/5215633383690" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-      </div>
-    </div>
-  </footer>
-
-  <a href="https://wa.me/5215633383690" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp">
-    <i class="bi bi-whatsapp"></i>
-  </a>
-
-  <script src="scripts.js"></script>
-</body>
-</html>
+  </div>
+</header>
+<main id="contenido">
+<section class="clear-hero"><div class="clear-wrap clear-hero-grid">
+ <div><p class="clear-eyebrow">Diseño web en Ciudad de México</p>
+  <h1>Páginas web y menús digitales <span>para tu negocio.</span></h1>
+  <p class="clear-hero-description">En Naatia creamos sitios web, menús QR y herramientas para WhatsApp que ayudan a mostrar lo que vendes y facilitar que tus clientes te contacten.</p>
+  <div class="clear-hero-actions"><a class="btn btn-primary" href="#precios">Ver servicios y precios <i class="bi bi-arrow-down" aria-hidden="true"></i></a><a class="btn btn-secondary" href="https://wa.me/5215633383690?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20cotizar%20un%20servicio%20de%20Naatia." target="_blank" rel="noopener noreferrer">Hablar por WhatsApp</a></div>
+  <div class="clear-hero-bullets"><span><i class="bi bi-check-circle" aria-hidden="true"></i> Precios de entrada accesibles</span><span><i class="bi bi-check-circle" aria-hidden="true"></i> Diseño fácil de usar</span></div>
+ </div>
+ <div class="clear-preview" aria-label="Ejemplo ilustrativo de cómo puede verse una página web">
+  <div class="clear-preview-top"><span class="clear-preview-dots"><i></i><i></i><i></i></span><span class="clear-preview-url">Ejemplo de sitio web</span></div>
+  <div class="clear-preview-main">
+    <div class="clear-preview-logo"><img src="img/logo-naatia.png" alt="Logo de Naatia" width="43" height="43"> <span>Naatia</span></div>
+    <h2>Tu negocio al alcance de tus clientes</h2>
+    <p>Un sitio claro para explicar lo que ofreces, mostrar tus servicios y recibir consultas.</p>
+    <span class="clear-preview-fakebutton">Contactar por WhatsApp</span>
+    <div class="clear-preview-tag">Vista ilustrativa · cada proyecto se personaliza</div>
+  </div>
+ </div>
+</div></section>
+<div class="clear-proof"><div class="clear-wrap clear-proof-grid"><div><i class="bi bi-phone" aria-hidden="true"></i> Diseños adaptados a celulares</div><div><i class="bi bi-chat-dots" aria-hidden="true"></i> Contacto directo por WhatsApp</div><div><i class="bi bi-receipt" aria-hidden="true"></i> Alcance y costo explicados</div></div></div>
+<section class="clear-section" id="precios"><div class="clear-wrap"><div class="clear-heading"><p class="clear-eyebrow">Servicios y precios</p><h2 class="clear-title">Elige lo que tu negocio necesita</h2><p class="clear-lead">Empieza con una solución sencilla. Si necesitas funciones adicionales, las cotizamos contigo antes de desarrollar.</p></div>
+<div class="clear-card-grid"><article class="clear-card emphasized"><span class="clear-card-flag">Ideal para negocios de comida</span><div class="clear-card-top"><span class="clear-icon"><i class="bi bi-qr-code-scan" aria-hidden="true"></i></span><span>Restaurantes y cafeterías</span></div>
+ <h3>Menú digital QR</h3><p>Tus productos y precios en una página que abre desde el celular, sin descargar aplicaciones.</p><ul class="clear-list"><li>Hasta 25 productos y 5 categorías</li><li>Tu logo, colores y código QR</li><li>Enlace para pedir por WhatsApp</li><li>Una ronda de ajustes</li></ul>
+ <div class="clear-card-bottom"><div class="clear-price"><small>Precio de lanzamiento desde</small><strong>$1,290 <span>MXN</span></strong></div>
+ <a class="btn btn-primary" href="https://wa.me/5215633383690?text=Hola%2C%20vi%20Naatia%20y%20quiero%20cotizar%20un%20men%C3%BA%20digital%20QR%20para%20mi%20negocio.%20%C2%BFMe%20pueden%20ayudar%3F" target="_blank" rel="noopener noreferrer" aria-label="Cotizar Menú digital QR">Cotizar <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></div>
+ </article>
+<article class="clear-card"><div class="clear-card-top"><span class="clear-icon"><i class="bi bi-window" aria-hidden="true"></i></span><span>Para empezar a vender</span></div>
+ <h3>Landing page</h3><p>Una página sencilla para mostrar un producto o servicio y recibir consultas.</p><ul class="clear-list"><li>Una página de hasta 4 secciones</li><li>Diseño para celular y computadora</li><li>Botón de WhatsApp</li><li>Una ronda de ajustes</li></ul>
+ <div class="clear-card-bottom"><div class="clear-price"><small>Precio de lanzamiento desde</small><strong>$2,490 <span>MXN</span></strong></div>
+ <a class="btn btn-primary" href="https://wa.me/5215633383690?text=Hola%2C%20vi%20Naatia%20y%20quiero%20cotizar%20una%20landing%20page%20para%20mi%20negocio.%20%C2%BFMe%20pueden%20ayudar%3F" target="_blank" rel="noopener noreferrer" aria-label="Cotizar Landing page">Cotizar <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></div>
+ </article>
+<article class="clear-card"><div class="clear-card-top"><span class="clear-icon"><i class="bi bi-laptop" aria-hidden="true"></i></span><span>Presencia profesional</span></div>
+ <h3>Web para negocio</h3><p>Un sitio con información clara sobre tu negocio, lo que haces y cómo contactarte.</p><ul class="clear-list"><li>Hasta 3 páginas: inicio, servicios y contacto</li><li>Formulario o enlace a WhatsApp</li><li>Diseño adaptable y SEO básico</li><li>Una ronda de ajustes</li></ul>
+ <div class="clear-card-bottom"><div class="clear-price"><small>Precio de lanzamiento desde</small><strong>$4,490 <span>MXN</span></strong></div>
+ <a class="btn btn-primary" href="https://wa.me/5215633383690?text=Hola%2C%20vi%20Naatia%20y%20quiero%20cotizar%20una%20p%C3%A1gina%20web%20para%20mi%20negocio%20para%20mi%20negocio.%20%C2%BFMe%20pueden%20ayudar%3F" target="_blank" rel="noopener noreferrer" aria-label="Cotizar Web para negocio">Cotizar <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></div>
+ </article>
+<article class="clear-card"><div class="clear-card-top"><span class="clear-icon"><i class="bi bi-whatsapp" aria-hidden="true"></i></span><span>Atención al cliente</span></div>
+ <h3>WhatsApp Business listo</h3><p>Te ayudamos a organizar tu WhatsApp para que tus clientes reciban una mejor atención.</p><ul class="clear-list"><li>Perfil profesional y horarios</li><li>Catálogo inicial de hasta 10 productos</li><li>Mensaje de bienvenida y ausencia</li><li>Hasta 5 respuestas rápidas y etiquetas</li></ul>
+ <div class="clear-card-bottom"><div class="clear-price"><small>Precio de lanzamiento desde</small><strong>$1,490 <span>MXN</span></strong></div>
+ <a class="btn btn-primary" href="https://wa.me/5215633383690?text=Hola%2C%20vi%20Naatia%20y%20quiero%20cotizar%20la%20configuraci%C3%B3n%20de%20WhatsApp%20Business%20para%20mi%20negocio.%20%C2%BFMe%20pueden%20ayudar%3F" target="_blank" rel="noopener noreferrer" aria-label="Cotizar WhatsApp Business listo">Cotizar <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></div>
+ </article></div>
+<p class="clear-fineprint">Precios de lanzamiento en MXN con impuestos aplicables incluidos. Son precios de partida para los alcances indicados. Dominio, alojamiento, plataformas externas y cambios posteriores se cotizan aparte.</p>
+</div></section>
+<section class="clear-section alt"><div class="clear-wrap"><div class="clear-heading"><p class="clear-eyebrow">Proyectos más completos</p><h2 class="clear-title">¿Necesitas algo más avanzado?</h2><p class="clear-lead">También podemos desarrollar soluciones especiales según lo que requiere tu negocio.</p></div><div class="clear-mini-grid">
+<article class="clear-mini-card"><span class="clear-icon"><i class="bi bi-bag-check" aria-hidden="true"></i></span><h3>Tienda en línea</h3><p>Catálogo, carrito y pagos en línea según tus productos y necesidades. Se cotiza por proyecto.</p><a class="clear-link" href="https://wa.me/5215633383690?text=Hola%2C%20vi%20Naatia%20y%20quiero%20cotizar%20una%20tienda%20en%20l%C3%ADnea%20para%20mi%20negocio.%20%C2%BFMe%20pueden%20ayudar%3F" target="_blank" rel="noopener noreferrer">Pedir cotización</a></article>
+<article class="clear-mini-card"><span class="clear-icon"><i class="bi bi-diagram-3" aria-hidden="true"></i></span><h3>Automatización avanzada</h3><p>Flujos o sistemas conectados a herramientas externas. Se revisan requisitos, plataforma y costos mensuales antes de cotizar.</p><a class="clear-link" href="https://wa.me/5215633383690?text=Hola%2C%20vi%20Naatia%20y%20quiero%20cotizar%20una%20automatizaci%C3%B3n%20avanzada%20para%20mi%20negocio.%20%C2%BFMe%20pueden%20ayudar%3F" target="_blank" rel="noopener noreferrer">Consultar una solución</a></article>
+</div></div></section>
+<section class="clear-section"><div class="clear-wrap"><div class="clear-heading center"><p class="clear-eyebrow">Cómo trabajamos</p><h2 class="clear-title">Simple desde el primer mensaje</h2><p class="clear-lead">Sin términos complicados ni sorpresas en el alcance.</p></div><div class="clear-steps">
+<article class="clear-step"><p class="clear-step-num">PASO 1</p><h3>Cuéntanos tu idea</h3><p>Nos explicas qué negocio tienes y qué necesitas.</p></article>
+<article class="clear-step"><p class="clear-step-num">PASO 2</p><h3>Recibe tu propuesta</h3><p>Te damos un precio, entregables y fechas estimadas por escrito.</p></article>
+<article class="clear-step"><p class="clear-step-num">PASO 3</p><h3>Creamos tu sitio</h3><p>Desarrollamos, revisamos contigo y publicamos cuando esté aprobado.</p></article>
+</div></div></section>
+<section class="clear-section alt"><div class="clear-wrap"><div class="clear-heading"><p class="clear-eyebrow">Trabajo publicado</p><h2 class="clear-title">Conoce un proyecto real</h2><p class="clear-lead">En lugar de prometer resultados, preferimos mostrarte lo que hemos construido.</p></div><div class="clear-mini-grid"><article class="clear-mini-card"><h3>TPrint</h3><p>Proyecto de tienda en línea, con catálogo de productos y un sitio diseñado para presentar una marca en internet.</p><a href="https://www.tprint.com.mx/" class="clear-link" target="_blank" rel="noopener noreferrer">Ver el sitio de TPrint</a></article><article class="clear-mini-card"><h3>¿Tu negocio será el siguiente?</h3><p>Desde restaurantes y barberías hasta servicios profesionales. Cada propuesta se adapta a tu negocio.</p><a href="clientes.html" class="clear-link">Ver nuestros proyectos</a></article></div></div></section>
+<section class="clear-section"><div class="clear-wrap"><div class="clear-heading"><p class="clear-eyebrow">Preguntas rápidas</p><h2 class="clear-title">Lo importante, sin letras pequeñas</h2></div><div class="clear-faq">
+<details><summary>¿Los precios incluyen todo?</summary><p>Incluyen el servicio descrito y los impuestos aplicables. Dominio, hosting, pagos a plataformas, suscripciones y funciones adicionales se cotizan por separado.</p></details>
+<details><summary>¿Puedo solicitar cambios después?</summary><p>Sí. Incluimos los ajustes especificados en cada propuesta; las modificaciones posteriores se cotizan según el trabajo necesario.</p></details>
+<details><summary>¿WhatsApp Business listo es un chatbot?</summary><p>No. Configuramos herramientas nativas de WhatsApp Business. Si necesitas un bot, integraciones o respuestas automáticas avanzadas, te hacemos una propuesta específica.</p></details>
+</div></div></section>
+<section class="clear-cta"><div class="clear-wrap clear-cta-inner"><div><p class="clear-eyebrow">Estamos para ayudarte</p><h2>¿Listo para mejorar la presencia de tu negocio?</h2><p>Cuéntanos qué necesitas. Te ayudamos a elegir una solución adecuada a tu presupuesto.</p></div><a class="btn btn-primary" href="https://wa.me/5215633383690?text=Hola%20Naatia%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20servicios%20digitales." target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp" aria-hidden="true"></i> Solicitar cotización</a></div></section>
+</main>
+<footer class="clear-footer"><div class="clear-wrap"><div class="clear-footer-inner">
+<div><a class="brand" href="index.html"><span class="brand-mark"><img src="img/logo-naatia.png" alt="" width="51" height="51"></span><span class="brand-copy"><strong>Naatia</strong><span>Webs y herramientas para negocios</span></span></a><p class="clear-footer-about">Ayudamos a negocios de México a tener una presencia digital clara y profesional.</p></div>
+<div><strong>Explora</strong><a href="index.html">Inicio</a><a href="servicios.html">Servicios y precios</a><a href="clientes.html">Proyectos</a><a href="faq.html">Preguntas frecuentes</a></div>
+<div><strong>Hablemos</strong><a href="https://wa.me/5215633383690?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20servicios%20de%20Naatia." target="_blank" rel="noopener noreferrer">WhatsApp: solicitar información</a><a href="contacto.html">Enviar una solicitud</a><a href="https://www.instagram.com/naatiamx/" target="_blank" rel="noopener noreferrer">Instagram</a><span>Ciudad de México · Atención en línea</span></div>
+</div><div class="clear-footer-bottom">© 2026 Naatia. Todos los derechos reservados.</div></div></footer>
+<script src="scripts.js"></script>
+</body></html>

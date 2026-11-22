@@ -4,11 +4,16 @@ const menu = document.getElementById("menu");
 if (menuToggle && menu) {
   menuToggle.addEventListener("click", () => {
     menu.classList.toggle("open");
+    const open = menu.classList.contains("open");
+    menuToggle.setAttribute("aria-expanded", String(open));
+    menuToggle.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
   });
 
   menu.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
       menu.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Abrir menú");
     });
   });
 }
@@ -109,8 +114,6 @@ Necesidad: ${mensaje}
 
     const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
 
-    setTimeout(() => {
-      window.open(url, "_blank");
-    }, 500);
+    window.location.assign(url);
   });
 }
