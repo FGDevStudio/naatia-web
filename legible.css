@@ -225,3 +225,7 @@ input::placeholder,textarea::placeholder{color:#697c7b}
 .contact-wrap input,.contact-wrap textarea,.contact-wrap select{color:#173138;background:#fff;border:1px solid #becec6}
 .contact-wrap input::placeholder,.contact-wrap textarea::placeholder{color:#667b79}
 @media(max-width:820px){.contact-wrap{grid-template-columns:1fr}.contact-page-section .contact-card{padding:25px}}
+
+/* Contacto por Instagram; número anterior desactivado */
+.whatsapp-float.instagram-float{background:#883ab1!important;color:#fff!important;box-shadow:0 10px 22px rgba(76,35,91,.2)!important}
+.whatsapp-float.instagram-float:hover{background:#63278b!important}
