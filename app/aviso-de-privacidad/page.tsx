@@ -1,0 +1,11 @@
+import type {Metadata} from "next";import Link from "next/link";
+export const metadata:Metadata={title:"Aviso de privacidad",description:"Información sobre el tratamiento de datos de las solicitudes de cotización de Naatia."};
+export default function Privacy(){return <main id="contenido" className="legal-page"><div className="shell legal-content"><p className="eyebrow">Información legal</p><h1>Aviso de privacidad</h1>
+<p><strong>Responsable:</strong> Naatia (nombre comercial). La identificación fiscal y domicilio del responsable deberán comunicarse en el aviso definitivo antes de empezar a recabar datos personales.</p>
+<p><strong>Datos que solicitamos:</strong> nombre, negocio, correo electrónico, teléfono opcional, sector, servicio de interés, presupuesto aproximado y descripción del proyecto. Podemos registrar también datos de origen de la visita (parámetros UTM) para identificar campañas.</p>
+<p><strong>Finalidad:</strong> responder solicitudes de cotización, preparar propuestas y dar seguimiento a la contratación. No solicitamos datos bancarios mediante el formulario.</p>
+<p><strong>Transferencia:</strong> para enviar la solicitud se utilizará un proveedor de correo transaccional cuando esté configurado. Sus datos de contacto y servicios se informarán en la versión definitiva del aviso. No debe activarse la recepción de datos hasta completar esta información.</p>
+<p><strong>Conservación:</strong> los datos se tratarán durante el tiempo necesario para atender la solicitud y las obligaciones aplicables. Antes de activar el formulario deberán definirse plazos y procedimientos de cancelación.</p>
+<p><strong>Derechos ARCO y revocación:</strong> antes de activar el tratamiento deberá publicarse un correo habilitado para solicitar acceso, rectificación, cancelación y oposición. Por ahora puedes contactar a Naatia desde su <a href="https://www.instagram.com/naatiamx/" target="_blank" rel="noopener noreferrer">Instagram oficial</a> para pedir información.</p>
+<p className="legal-warning"><strong>Estado:</strong> este es un borrador informativo. Requiere completar los datos del responsable, contacto formal, terceros y plazos conforme a la normativa mexicana aplicable antes de habilitar la recepción real de cotizaciones.</p>
+<Link href="/" className="btn btn-outline">Volver al inicio</Link></div></main>;}
