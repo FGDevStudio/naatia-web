@@ -44,10 +44,10 @@ export default function Home(){return <main id="contenido">
  <p className="hero-note">Diseño para celulares · Atención personalizada · Entregas desde 3 a 5 días hábiles*</p></div>
  <div className="hero-showcase" aria-label="Ejemplo visual de diseño web adaptable"><div className="main-monitor">
  <div className="monitor-bar"><span className="browser-dots"><i/><i/><i/></span><span>Tu negocio en internet</span></div>
- <div className="monitor-content"><div className="monitor-top"><span className="monitor-logo"><Image src="/logo-naatia.png" alt="" width={24} height={24} unoptimized/> DISEÑO WEB</span><span>Inicio &nbsp; Servicios &nbsp; Contacto</span></div>
+ <div className="monitor-content"><div className="monitor-top"><span className="monitor-logo"><Image src="/logo-naatia.png" alt="" width={24} height={24}/> DISEÑO WEB</span><span>Inicio &nbsp; Servicios &nbsp; Contacto</span></div>
  <div className="monitor-hero"><div><small>UNA PRESENCIA QUE GENERA CONFIANZA</small><strong>Haz que te encuentren. Haz que te elijan.</strong><span>Tu negocio, tus servicios y tu contacto en un solo lugar.</span><b>Conoce nuestros servicios →</b></div><div className="monitor-abstract"><i></i><i></i><i></i></div></div>
  <div className="monitor-pill-row"><span>Diseño profesional</span><span>Tu identidad</span><span>Contacto fácil</span></div></div></div>
- <div className="mock-phone"><div className="mock-notch"/><div className="phone-mini-logo"><Image src="/logo-naatia.png" alt="" width={23} height={23} unoptimized/></div><div className="mock-phone-art"><i></i></div><strong>Tu web, también en celular.</strong><span>Clara, moderna y fácil de navegar.</span><b>Contactar ↗</b></div>
+ <div className="mock-phone"><div className="mock-notch"/><div className="phone-mini-logo"><Image src="/logo-naatia.png" alt="" width={23} height={23}/></div><div className="mock-phone-art"><i></i></div><strong>Tu web, también en celular.</strong><span>Clara, moderna y fácil de navegar.</span><b>Contactar ↗</b></div>
  <div className="hero-chip"><span>✓</span> Adaptable a cualquier pantalla</div>
  </div></div></section>
  <section className="trust-strip"><div className="shell trust-grid"><span>Diseño adaptado a tu negocio</span><span>Precios y entregables claros</span><span>Acompañamiento de principio a fin</span></div></section>
