@@ -7,7 +7,7 @@ const safe=(s:unknown,max:number)=>typeof s==="string"?s.trim().slice(0,max):"";
 const escapeHtml=(s:string)=>s.replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]||c));
 export async function POST(req:NextRequest){
  const origin=req.headers.get("origin");
- if(origin){try{const url=new URL(origin);const allowed=["www.naatia.com.mx","naatia.com.mx"];const host=url.hostname;if(!allowed.includes(host)&&!/^naatia(?:-web)?-[a-z0-9-]+\\.vercel\\.app$/.test(host)&&host!=="localhost"&&!host.endsWith(".localhost"))return NextResponse.json({message:"Origen no permitido."},{status:403});}catch{return NextResponse.json({message:"Origen inválido."},{status:403})}}
+ if(origin){try{const url=new URL(origin);const allowed=["www.naatia.com.mx","naatia.com.mx"];const host=url.hostname;if(!allowed.includes(host)&&!/^naatia(?:-web)?-[a-z0-9-]+\.vercel\.app$/.test(host)&&host!=="localhost"&&!host.endsWith(".localhost"))return NextResponse.json({message:"Origen no permitido."},{status:403});}catch{return NextResponse.json({message:"Origen inválido."},{status:403})}}
  const type=req.headers.get("content-type")||"";
  if(!type.includes("application/json"))return NextResponse.json({message:"Formato no válido."},{status:415});
  const size=Number(req.headers.get("content-length")||0);
