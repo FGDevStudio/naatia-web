@@ -1,5 +1,5 @@
 "use client";
-import {FormEvent,useEffect,useState} from "react";
+import {FormEvent,useEffect,useRef,useState} from "react";
 import {useSearchParams} from "next/navigation";
 import Link from "next/link";
 type FormState={name:string,business:string,email:string,phone:string,industry:string,service:string,budget:string,details:string,website:string,consent:boolean};
@@ -9,15 +9,17 @@ const industries=["","Clínica dental","Consultorio médico","Construcción y re
 function track(name:string,detail:Record<string,string>={}){try{const w=window as typeof window & {gtag?:(...args:unknown[])=>void;fbq?:(...args:unknown[])=>void};w.gtag?.("event",name,detail);if(name==="generate_lead")w.fbq?.("track","Lead",detail)}catch{}}
 export default function QuoteForm(){
  const query=useSearchParams();
+ const startedAt=useRef(Date.now());
  const [data,setData]=useState<FormState>(initial);
  const [status,setStatus]=useState<"idle"|"sending"|"success"|"error">("idle");
  const [feedback,setFeedback]=useState("");
  useEffect(()=>{const key=query.get("paquete");if(key&&services.some(s=>s[0]===key))setData(p=>({...p,service:key}));},[query]);
+ useEffect(()=>{const params=new URLSearchParams(window.location.search);for(const k of ["utm_source","utm_medium","utm_campaign","utm_content","utm_term","ejemplo","plan"]){const v=params.get(k);if(v&&v.length<150)sessionStorage.setItem("naatia_"+k,v);}},[]);
  function set<K extends keyof FormState>(key:K,value:FormState[K]){setData(p=>({...p,[key]:value}));}
  async function onSubmit(e:FormEvent<HTMLFormElement>){e.preventDefault();if(status==="sending")return;
  setStatus("sending");setFeedback("");
- const params=new URLSearchParams(window.location.search);
- const payload={...data,utm:{source:params.get("utm_source")||"",medium:params.get("utm_medium")||"",campaign:params.get("utm_campaign")||"",content:params.get("utm_content")||"",term:params.get("utm_term")||""},landing:window.location.pathname,startedAt:Date.now()};
+ const param=(key:string)=>sessionStorage.getItem("naatia_"+key)||new URLSearchParams(window.location.search).get(key)||"";
+ const payload={...data,utm:{source:param("utm_source"),medium:param("utm_medium"),campaign:param("utm_campaign"),content:param("utm_content"),term:param("utm_term"),example:param("ejemplo"),plan:param("plan")},landing:window.location.pathname,startedAt:startedAt.current};
  try{const r=await fetch("/api/cotizacion",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify(payload)});const result:unknown=await r.json();const message=typeof result==="object"&&result!==null&&"message" in result?String((result as {message:unknown}).message):"No pudimos procesar tu solicitud.";
  if(!r.ok)throw new Error(message);setStatus("success");setFeedback("Solicitud recibida. Te contactaremos por correo electrónico.");setData(initial);track("generate_lead",{service:data.service,utm_source:payload.utm.source,utm_campaign:payload.utm.campaign});}
  catch(err){setStatus("error");setFeedback(err instanceof Error?err.message:"No se pudo enviar. Inténtalo más tarde.");}}
