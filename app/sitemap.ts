@@ -1,0 +1,2 @@
+import type {MetadataRoute} from "next";import {SITE_URL,demos} from "@/lib/site";
+export default function sitemap():MetadataRoute.Sitemap{return ["","/aviso-de-privacidad","/terminos-y-condiciones",...demos.map(d=>"/demostraciones/"+d.slug)].map((path)=>({url:SITE_URL+path,lastModified:new Date(),changeFrequency:"monthly" as const,priority:path===""?1:path.startsWith("/demostraciones")?.7:.3}));}
