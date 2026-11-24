@@ -8,7 +8,7 @@ export default function Header(){
  const nav=[["Inicio","/"],["Servicios","/#servicios"],["Precios","/#precios"],["Demostraciones","/#demostraciones"],["Preguntas","/#preguntas"],["Contacto","/#cotizar"]];
  return <header className="site-header"><div className="shell nav-shell">
   <Link className="brand" href="/" onClick={()=>setOpen(false)} aria-label="Naatia — inicio">
-   <Image src="/logo-naatia.png" alt="Logo original Naatia" width={48} height={48} priority unoptimized/>
+   <Image src="/logo-naatia.png" alt="Logo original Naatia" width={48} height={48} priority />
    <span><strong>Naatia</strong><small>Estudio de desarrollo web</small></span>
   </Link>
   <nav className={open?"nav-links is-open":"nav-links"} aria-label="Menú principal" id="main-navigation">
